@@ -5,7 +5,5 @@ I'm good at math. I'm just really bad at remembering formulas, and our school-is
 Thus the OSSC was born.
 
 TODO :	
-Add planned features overview
-Add schematics
-Add actual code
+Add planned features overview; Add schematics; Add actual code;
 				
