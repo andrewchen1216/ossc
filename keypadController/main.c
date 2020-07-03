@@ -11,23 +11,27 @@
 int sendbtn(int x, int y)
 {
     // send button coordinates to master chip via i2c
+	
+	// if x and y == 0x0f, send nothing
 }
 
-TWSA = 0x24;
+
 
 int main(void)
 {    
-
+	TWSA	= 0x24;
+	TWSCRA	= 0xFF;
+	
     bool row[9];
     
-    DDRA = 0b00011111;    //0 stands for input, 1 stands for output
-    DDRB = 0b00001111;
-    DDRC = 0b00100100;    
+    DDRA	= 0b00011111;    //0 stands for input, 1 stands for output
+    DDRB	= 0b00001111;
+    DDRC	= 0b00100100;    
     
     while (1) 
     {
         row[0] = PORTA7; //rows top to bottom 
-        row[1] = PORTA6;
+        row[1] = PORTA6; //
         row[2] = PORTA5;
         row[3] = PORTC5;
         row[4] = PORTC2;
@@ -47,7 +51,7 @@ int main(void)
                 }
 				else
 				{
-					sendbtn(NULL,NULL);
+					sendbtn(0x0f, 0x0f);
 				}
             }
             PORTA&=~(1<<i);
