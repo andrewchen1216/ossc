@@ -6,7 +6,8 @@
 
 #include <avr/io.h>
 #include <stdbool.h>
-
+#include <util/twi.h>
+#include "twislave.h"
 
 int fuckit(int x, int y)
 {
