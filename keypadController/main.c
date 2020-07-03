@@ -8,18 +8,17 @@
 #include <stdbool.h>
 #include <util/twi.h>
 
-int fuckit(int x, int y)
+int sendbtn(int x, int y)
 {
     // send button coordinates to master chip via i2c
-	
 }
 
+TWSA = 0x24;
 
 int main(void)
 {    
 
     bool row[9];
-    bool col[5] = {PORTA0, PORTA1, PORTA2, PORTA3, PORTA4}; //columns left to right
     
     DDRA = 0b00011111;    //0 stands for input, 1 stands for output
     DDRB = 0b00001111;
@@ -39,15 +38,19 @@ int main(void)
         
         for (int i = 0; i < 5; i++)
         {
-            col[i] = 1;
+            PORTA|=(1<<i);
             for (int j = 0; j < 9; j++)
             {
                 if (row[j] == 0)
                 {
-                    fuckit(i,j);
+                    sendbtn(i,j);
                 }
+				else
+				{
+					sendbtn(NULL,NULL);
+				}
             }
-            col[i] = 0;
+            PORTA&=~(1<<i);
         }
     }
 }
