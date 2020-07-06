@@ -153,7 +153,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000       0x76
+.text           0x00000000       0xc8
  *(.vectors)
  .vectors       0x00000000       0x26 C:/Absolut Alkoholische Anwendungen/Atmel Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega8a/avr4/crtatmega8a.o
                 0x00000000                __vector_default
@@ -229,13 +229,13 @@ END GROUP
                 0x00000036                __vector_18
                 0x00000038                . = ALIGN (0x2)
  *(.text.*)
- .text.main     0x00000038       0x3a main.o
+ .text.main     0x00000038       0x8c main.o
                 0x00000038                main
-                0x00000072                . = ALIGN (0x2)
+                0x000000c4                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00000072        0x0 c:/absolut alkoholische anwendungen/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr4\libgcc.a(_exit.o)
-                0x00000072                _exit
-                0x00000072                exit
+ .fini9         0x000000c4        0x0 c:/absolut alkoholische anwendungen/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr4\libgcc.a(_exit.o)
+                0x000000c4                _exit
+                0x000000c4                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -254,11 +254,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00000072        0x4 c:/absolut alkoholische anwendungen/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr4\libgcc.a(_exit.o)
+ .fini0         0x000000c4        0x4 c:/absolut alkoholische anwendungen/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr4\libgcc.a(_exit.o)
  *(.fini0)
-                0x00000076                _etext = .
+                0x000000c8                _etext = .
 
-.data           0x00800060        0x0 load address 0x00000076
+.data           0x00800060        0x0 load address 0x000000c8
                 [!provide]                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
@@ -276,8 +276,8 @@ END GROUP
  *(.bss*)
  *(COMMON)
                 [!provide]                PROVIDE (__bss_end, .)
-                0x00000076                __data_load_start = LOADADDR (.data)
-                0x00000076                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x000000c8                __data_load_start = LOADADDR (.data)
+                0x000000c8                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x00800060        0x0
                 [!provide]                PROVIDE (__noinit_start, .)
@@ -356,34 +356,34 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000      0x595
+.debug_info     0x00000000      0x62b
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x48c C:/Absolut Alkoholische Anwendungen/Atmel Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega8a/avr4/crtatmega8a.o
- .debug_info    0x0000048c      0x109 main.o
+ .debug_info    0x0000048c      0x19f main.o
 
-.debug_abbrev   0x00000000      0x517
+.debug_abbrev   0x00000000      0x57d
  *(.debug_abbrev)
  .debug_abbrev  0x00000000      0x44e C:/Absolut Alkoholische Anwendungen/Atmel Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega8a/avr4/crtatmega8a.o
- .debug_abbrev  0x0000044e       0xc9 main.o
+ .debug_abbrev  0x0000044e      0x12f main.o
 
-.debug_line     0x00000000      0x1f7
+.debug_line     0x00000000      0x2d0
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x00000000      0x109 C:/Absolut Alkoholische Anwendungen/Atmel Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega8a/avr4/crtatmega8a.o
- .debug_line    0x00000109       0xee main.o
+ .debug_line    0x00000109      0x1c7 main.o
 
-.debug_frame    0x00000000       0x34
+.debug_frame    0x00000000       0x44
  *(.debug_frame)
- .debug_frame   0x00000000       0x34 main.o
+ .debug_frame   0x00000000       0x44 main.o
 
-.debug_str      0x00000000      0x2cc
+.debug_str      0x00000000      0x317
  *(.debug_str)
  .debug_str     0x00000000      0x17a C:/Absolut Alkoholische Anwendungen/Atmel Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega8a/avr4/crtatmega8a.o
- .debug_str     0x0000017a      0x152 main.o
-                                0x186 (size before relaxing)
+ .debug_str     0x0000017a      0x19d main.o
+                                0x1d1 (size before relaxing)
 
-.debug_loc      0x00000000       0x4a
+.debug_loc      0x00000000      0x123
  *(.debug_loc)
- .debug_loc     0x00000000       0x4a main.o
+ .debug_loc     0x00000000      0x123 main.o
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -403,9 +403,9 @@ END GROUP
 .debug_pubtypes
  *(.debug_pubtypes)
 
-.debug_ranges   0x00000000       0x18
+.debug_ranges   0x00000000       0x30
  *(.debug_ranges)
- .debug_ranges  0x00000000       0x18 main.o
+ .debug_ranges  0x00000000       0x30 main.o
 
 .debug_macro
  *(.debug_macro)
