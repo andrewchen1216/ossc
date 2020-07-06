@@ -23,15 +23,16 @@ int main(void)
 
 	
     bool row[9];
-   
-
+	
+	TWAR	= 0x24;
+	
     DDRB	= 0x0F; // Enable PORTB0...4 (columns) as output.
     DDRD	= 0x00;	// Better safe than sorry.
 	DDRC	= 0x00; // Ditto.   
     
     while (1) 
     {
-        row[0] = PINB5; //rows top to bottom 
+        row[0] = PINB5; // Update row data
         row[1] = PINB6; 
         row[2] = PINB7;
         row[3] = PIND0;
