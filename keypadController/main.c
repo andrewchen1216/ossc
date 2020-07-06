@@ -7,6 +7,7 @@
 #include <avr/io.h>
 #include <stdbool.h>
 #include <util/twi.h>
+#include <util/delay.h>
 
 int sendbtn(int x, int y)
 {
@@ -22,11 +23,11 @@ int main(void)
 
 	
     bool row[9];
-    
-//0 stands for input, 1 stands for output
-    DDRB	= 0x0F;
-    DDRD	= 0x00;
-	DDRC	= 0x00;    
+   
+
+    DDRB	= 0x0F; // Enable PORTB0...4 (columns) as output.
+    DDRD	= 0x00;	// Better safe than sorry.
+	DDRC	= 0x00; // Ditto.   
     
     while (1) 
     {
