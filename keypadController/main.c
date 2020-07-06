@@ -4,6 +4,7 @@
  * Author : memecian
  */ 
 
+#define F_CPU 8000000
 #include <avr/io.h>
 #include <stdbool.h>
 #include <util/twi.h>
@@ -50,6 +51,7 @@ int main(void)
                 if (row[j] == 0)
                 {
                     sendbtn(i,j);
+					_delay_ms(200);
                 }
 				else
 				{
