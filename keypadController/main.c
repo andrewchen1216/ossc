@@ -19,30 +19,30 @@ int sendbtn(int x, int y)
 
 int main(void)
 {    
-	TWSA	= 0x24;
-	TWSCRA	= 0xFF;
+
 	
     bool row[9];
     
-    DDRA	= 0b00011111;    //0 stands for input, 1 stands for output
-    DDRB	= 0b00001111;
-    DDRC	= 0b00100100;    
+//0 stands for input, 1 stands for output
+    DDRB	= 0x0F;
+    DDRD	= 0x00;
+	DDRC	= 0x00;    
     
     while (1) 
     {
-        row[0] = PORTA7; //rows top to bottom 
-        row[1] = PORTA6; //
-        row[2] = PORTA5;
-        row[3] = PORTC5;
-        row[4] = PORTC2;
-        row[5] = PORTB3;
-        row[6] = PORTB2;
-        row[7] = PORTB1;
-        row[8] = PORTB0;
+        row[0] = PINB5; //rows top to bottom 
+        row[1] = PINB6; 
+        row[2] = PINB7;
+        row[3] = PIND0;
+        row[4] = PIND1;
+        row[5] = PIND2;
+        row[6] = PIND3;
+        row[7] = PIND4;
+        row[8] = PIND5;
         
         for (int i = 0; i < 5; i++)
         {
-            PORTA|=(1<<i);
+            PORTB|=(1<<i);
             for (int j = 0; j < 9; j++)
             {
                 if (row[j] == 0)
@@ -54,7 +54,7 @@ int main(void)
 					sendbtn(0x0f, 0x0f);
 				}
             }
-            PORTA&=~(1<<i);
+            PORTB&=~(1<<i);
         }
     }
 }

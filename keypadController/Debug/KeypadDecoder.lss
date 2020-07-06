@@ -3,144 +3,134 @@ KeypadDecoder.elf:     file format elf32-avr
 
 Sections:
 Idx Name          Size      VMA       LMA       File off  Algn
-  0 .text         00000080  00000000  00000000  00000054  2**1
+  0 .text         00000076  00000000  00000000  00000054  2**1
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
-  1 .data         00000000  00800040  00800040  000000d4  2**0
+  1 .data         00000000  00800060  00800060  000000ca  2**0
                   CONTENTS, ALLOC, LOAD, DATA
-  2 .comment      00000030  00000000  00000000  000000d4  2**0
+  2 .comment      00000030  00000000  00000000  000000ca  2**0
                   CONTENTS, READONLY
-  3 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00000104  2**2
+  3 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  000000fc  2**2
                   CONTENTS, READONLY
-  4 .debug_aranges 00000028  00000000  00000000  00000140  2**0
+  4 .debug_aranges 00000028  00000000  00000000  00000138  2**0
                   CONTENTS, READONLY, DEBUGGING
-  5 .debug_info   00000588  00000000  00000000  00000168  2**0
+  5 .debug_info   00000595  00000000  00000000  00000160  2**0
                   CONTENTS, READONLY, DEBUGGING
-  6 .debug_abbrev 00000507  00000000  00000000  000006f0  2**0
+  6 .debug_abbrev 00000517  00000000  00000000  000006f5  2**0
                   CONTENTS, READONLY, DEBUGGING
-  7 .debug_line   000001fd  00000000  00000000  00000bf7  2**0
+  7 .debug_line   000001f7  00000000  00000000  00000c0c  2**0
                   CONTENTS, READONLY, DEBUGGING
-  8 .debug_frame  00000034  00000000  00000000  00000df4  2**2
+  8 .debug_frame  00000034  00000000  00000000  00000e04  2**2
                   CONTENTS, READONLY, DEBUGGING
-  9 .debug_str    000002e6  00000000  00000000  00000e28  2**0
+  9 .debug_str    000002cc  00000000  00000000  00000e38  2**0
                   CONTENTS, READONLY, DEBUGGING
- 10 .debug_loc    0000004a  00000000  00000000  0000110e  2**0
+ 10 .debug_loc    0000004a  00000000  00000000  00001104  2**0
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_ranges 00000018  00000000  00000000  00001158  2**0
+ 11 .debug_ranges 00000018  00000000  00000000  0000114e  2**0
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
 
 00000000 <__vectors>:
-   0:	11 c0       	rjmp	.+34     	; 0x24 <__ctors_end>
-   2:	18 c0       	rjmp	.+48     	; 0x34 <__bad_interrupt>
-   4:	17 c0       	rjmp	.+46     	; 0x34 <__bad_interrupt>
-   6:	16 c0       	rjmp	.+44     	; 0x34 <__bad_interrupt>
-   8:	15 c0       	rjmp	.+42     	; 0x34 <__bad_interrupt>
-   a:	14 c0       	rjmp	.+40     	; 0x34 <__bad_interrupt>
-   c:	13 c0       	rjmp	.+38     	; 0x34 <__bad_interrupt>
-   e:	12 c0       	rjmp	.+36     	; 0x34 <__bad_interrupt>
-  10:	11 c0       	rjmp	.+34     	; 0x34 <__bad_interrupt>
-  12:	10 c0       	rjmp	.+32     	; 0x34 <__bad_interrupt>
-  14:	0f c0       	rjmp	.+30     	; 0x34 <__bad_interrupt>
-  16:	0e c0       	rjmp	.+28     	; 0x34 <__bad_interrupt>
-  18:	0d c0       	rjmp	.+26     	; 0x34 <__bad_interrupt>
-  1a:	0c c0       	rjmp	.+24     	; 0x34 <__bad_interrupt>
-  1c:	0b c0       	rjmp	.+22     	; 0x34 <__bad_interrupt>
-  1e:	0a c0       	rjmp	.+20     	; 0x34 <__bad_interrupt>
-  20:	09 c0       	rjmp	.+18     	; 0x34 <__bad_interrupt>
-  22:	08 c0       	rjmp	.+16     	; 0x34 <__bad_interrupt>
+   0:	12 c0       	rjmp	.+36     	; 0x26 <__ctors_end>
+   2:	19 c0       	rjmp	.+50     	; 0x36 <__bad_interrupt>
+   4:	18 c0       	rjmp	.+48     	; 0x36 <__bad_interrupt>
+   6:	17 c0       	rjmp	.+46     	; 0x36 <__bad_interrupt>
+   8:	16 c0       	rjmp	.+44     	; 0x36 <__bad_interrupt>
+   a:	15 c0       	rjmp	.+42     	; 0x36 <__bad_interrupt>
+   c:	14 c0       	rjmp	.+40     	; 0x36 <__bad_interrupt>
+   e:	13 c0       	rjmp	.+38     	; 0x36 <__bad_interrupt>
+  10:	12 c0       	rjmp	.+36     	; 0x36 <__bad_interrupt>
+  12:	11 c0       	rjmp	.+34     	; 0x36 <__bad_interrupt>
+  14:	10 c0       	rjmp	.+32     	; 0x36 <__bad_interrupt>
+  16:	0f c0       	rjmp	.+30     	; 0x36 <__bad_interrupt>
+  18:	0e c0       	rjmp	.+28     	; 0x36 <__bad_interrupt>
+  1a:	0d c0       	rjmp	.+26     	; 0x36 <__bad_interrupt>
+  1c:	0c c0       	rjmp	.+24     	; 0x36 <__bad_interrupt>
+  1e:	0b c0       	rjmp	.+22     	; 0x36 <__bad_interrupt>
+  20:	0a c0       	rjmp	.+20     	; 0x36 <__bad_interrupt>
+  22:	09 c0       	rjmp	.+18     	; 0x36 <__bad_interrupt>
+  24:	08 c0       	rjmp	.+16     	; 0x36 <__bad_interrupt>
 
-00000024 <__ctors_end>:
-  24:	11 27       	eor	r17, r17
-  26:	1f bf       	out	0x3f, r17	; 63
-  28:	cf e3       	ldi	r28, 0x3F	; 63
-  2a:	d1 e0       	ldi	r29, 0x01	; 1
-  2c:	de bf       	out	0x3e, r29	; 62
-  2e:	cd bf       	out	0x3d, r28	; 61
-  30:	02 d0       	rcall	.+4      	; 0x36 <main>
-  32:	24 c0       	rjmp	.+72     	; 0x7c <_exit>
+00000026 <__ctors_end>:
+  26:	11 24       	eor	r1, r1
+  28:	1f be       	out	0x3f, r1	; 63
+  2a:	cf e5       	ldi	r28, 0x5F	; 95
+  2c:	d4 e0       	ldi	r29, 0x04	; 4
+  2e:	de bf       	out	0x3e, r29	; 62
+  30:	cd bf       	out	0x3d, r28	; 61
+  32:	02 d0       	rcall	.+4      	; 0x38 <main>
+  34:	1e c0       	rjmp	.+60     	; 0x72 <_exit>
 
-00000034 <__bad_interrupt>:
-  34:	e5 cf       	rjmp	.-54     	; 0x0 <__vectors>
+00000036 <__bad_interrupt>:
+  36:	e4 cf       	rjmp	.-56     	; 0x0 <__vectors>
 
-00000036 <main>:
+00000038 <main>:
 
-
-
-int main(void)
-{    
-	TWSA	= 0x24;
-  36:	44 e2       	ldi	r20, 0x24	; 36
-  38:	4a bd       	out	0x2a, r20	; 42
-	TWSCRA	= 0xFF;
-  3a:	5f ef       	ldi	r21, 0xFF	; 255
-  3c:	5d bd       	out	0x2d, r21	; 45
 	
     bool row[9];
     
-    DDRA	= 0b00011111;    //0 stands for input, 1 stands for output
-  3e:	5f e1       	ldi	r21, 0x1F	; 31
-  40:	51 b9       	out	0x01, r21	; 1
-    DDRB	= 0b00001111;
-  42:	5f e0       	ldi	r21, 0x0F	; 15
-  44:	55 b9       	out	0x05, r21	; 5
-    DDRC	= 0b00100100;    
-  46:	4c bb       	out	0x1c, r20	; 28
-        row[7] = PORTB1;
-        row[8] = PORTB0;
+//0 stands for input, 1 stands for output
+    DDRB	= 0x0F;
+  38:	8f e0       	ldi	r24, 0x0F	; 15
+  3a:	87 bb       	out	0x17, r24	; 23
+    DDRD	= 0x00;
+  3c:	11 ba       	out	0x11, r1	; 17
+	DDRC	= 0x00;    
+  3e:	14 ba       	out	0x14, r1	; 20
+        row[7] = PIND4;
+        row[8] = PIND5;
         
         for (int i = 0; i < 5; i++)
         {
-            PORTA|=(1<<i);
-  48:	81 e0       	ldi	r24, 0x01	; 1
-  4a:	90 e0       	ldi	r25, 0x00	; 0
-        row[5] = PORTB3;
-        row[6] = PORTB2;
-        row[7] = PORTB1;
-        row[8] = PORTB0;
+            PORTB|=(1<<i);
+  40:	61 e0       	ldi	r22, 0x01	; 1
+  42:	70 e0       	ldi	r23, 0x00	; 0
+        row[5] = PIND2;
+        row[6] = PIND3;
+        row[7] = PIND4;
+        row[8] = PIND5;
         
         for (int i = 0; i < 5; i++)
-  4c:	60 e0       	ldi	r22, 0x00	; 0
-  4e:	70 e0       	ldi	r23, 0x00	; 0
+  44:	20 e0       	ldi	r18, 0x00	; 0
+  46:	30 e0       	ldi	r19, 0x00	; 0
         {
-            PORTA|=(1<<i);
-  50:	e2 b1       	in	r30, 0x02	; 2
-  52:	48 2f       	mov	r20, r24
-  54:	59 2f       	mov	r21, r25
-  56:	06 2f       	mov	r16, r22
-  58:	02 c0       	rjmp	.+4      	; 0x5e <__SREG__+0x1f>
-  5a:	44 0f       	add	r20, r20
-  5c:	55 1f       	adc	r21, r21
-  5e:	0a 95       	dec	r16
-  60:	e2 f7       	brpl	.-8      	; 0x5a <__SREG__+0x1b>
-  62:	5e 2f       	mov	r21, r30
-  64:	54 2b       	or	r21, r20
-  66:	52 b9       	out	0x02, r21	; 2
+            PORTB|=(1<<i);
+  48:	48 b3       	in	r20, 0x18	; 24
+  4a:	cb 01       	movw	r24, r22
+  4c:	02 2e       	mov	r0, r18
+  4e:	02 c0       	rjmp	.+4      	; 0x54 <__SREG__+0x15>
+  50:	88 0f       	add	r24, r24
+  52:	99 1f       	adc	r25, r25
+  54:	0a 94       	dec	r0
+  56:	e2 f7       	brpl	.-8      	; 0x50 <__SREG__+0x11>
+  58:	94 2f       	mov	r25, r20
+  5a:	98 2b       	or	r25, r24
+  5c:	98 bb       	out	0x18, r25	; 24
 				else
 				{
 					sendbtn(0x0f, 0x0f);
 				}
             }
-            PORTA&=~(1<<i);
-  68:	52 b1       	in	r21, 0x02	; 2
-  6a:	40 95       	com	r20
-  6c:	45 23       	and	r20, r21
-  6e:	42 b9       	out	0x02, r20	; 2
-        row[5] = PORTB3;
-        row[6] = PORTB2;
-        row[7] = PORTB1;
-        row[8] = PORTB0;
+            PORTB&=~(1<<i);
+  5e:	98 b3       	in	r25, 0x18	; 24
+  60:	80 95       	com	r24
+  62:	89 23       	and	r24, r25
+  64:	88 bb       	out	0x18, r24	; 24
+        row[5] = PIND2;
+        row[6] = PIND3;
+        row[7] = PIND4;
+        row[8] = PIND5;
         
         for (int i = 0; i < 5; i++)
-  70:	6f 5f       	subi	r22, 0xFF	; 255
-  72:	7f 4f       	sbci	r23, 0xFF	; 255
-  74:	65 30       	cpi	r22, 0x05	; 5
-  76:	71 07       	cpc	r23, r17
-  78:	59 f7       	brne	.-42     	; 0x50 <__SREG__+0x11>
-  7a:	e8 cf       	rjmp	.-48     	; 0x4c <__SREG__+0xd>
+  66:	2f 5f       	subi	r18, 0xFF	; 255
+  68:	3f 4f       	sbci	r19, 0xFF	; 255
+  6a:	25 30       	cpi	r18, 0x05	; 5
+  6c:	31 05       	cpc	r19, r1
+  6e:	61 f7       	brne	.-40     	; 0x48 <__SREG__+0x9>
+  70:	e9 cf       	rjmp	.-46     	; 0x44 <__SREG__+0x5>
 
-0000007c <_exit>:
-  7c:	f8 94       	cli
+00000072 <_exit>:
+  72:	f8 94       	cli
 
-0000007e <__stop_program>:
-  7e:	ff cf       	rjmp	.-2      	; 0x7e <__stop_program>
+00000074 <__stop_program>:
+  74:	ff cf       	rjmp	.-2      	; 0x74 <__stop_program>

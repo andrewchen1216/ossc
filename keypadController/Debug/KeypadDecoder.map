@@ -1,65 +1,67 @@
 Archive member included to satisfy reference by file (symbol)
 
-c:/absolut alkoholische anwendungen/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrtiny\libgcc.a(_exit.o)
-                              C:/Absolut Alkoholische Anwendungen/Atmel Studio/7.0/Packs/atmel/ATtiny_DFP/1.3.229/gcc/dev/attiny40/avrtiny/crtattiny40.o (exit)
+c:/absolut alkoholische anwendungen/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr4\libgcc.a(_exit.o)
+                              C:/Absolut Alkoholische Anwendungen/Atmel Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega8a/avr4/crtatmega8a.o (exit)
 
 Discarded input sections
 
- .data          0x00000000        0x0 C:/Absolut Alkoholische Anwendungen/Atmel Studio/7.0/Packs/atmel/ATtiny_DFP/1.3.229/gcc/dev/attiny40/avrtiny/crtattiny40.o
- .bss           0x00000000        0x0 C:/Absolut Alkoholische Anwendungen/Atmel Studio/7.0/Packs/atmel/ATtiny_DFP/1.3.229/gcc/dev/attiny40/avrtiny/crtattiny40.o
+ .data          0x00000000        0x0 C:/Absolut Alkoholische Anwendungen/Atmel Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega8a/avr4/crtatmega8a.o
+ .bss           0x00000000        0x0 C:/Absolut Alkoholische Anwendungen/Atmel Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega8a/avr4/crtatmega8a.o
  .text          0x00000000        0x0 main.o
  .data          0x00000000        0x0 main.o
  .bss           0x00000000        0x0 main.o
  .text.sendbtn  0x00000000        0x2 main.o
- .text          0x00000000        0x0 c:/absolut alkoholische anwendungen/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrtiny\libgcc.a(_exit.o)
- .data          0x00000000        0x0 c:/absolut alkoholische anwendungen/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrtiny\libgcc.a(_exit.o)
- .bss           0x00000000        0x0 c:/absolut alkoholische anwendungen/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrtiny\libgcc.a(_exit.o)
+ .text          0x00000000        0x0 c:/absolut alkoholische anwendungen/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr4\libgcc.a(_exit.o)
+ .data          0x00000000        0x0 c:/absolut alkoholische anwendungen/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr4\libgcc.a(_exit.o)
+ .bss           0x00000000        0x0 c:/absolut alkoholische anwendungen/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr4\libgcc.a(_exit.o)
  .text.libgcc.mul
-                0x00000000        0x0 c:/absolut alkoholische anwendungen/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrtiny\libgcc.a(_exit.o)
+                0x00000000        0x0 c:/absolut alkoholische anwendungen/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr4\libgcc.a(_exit.o)
  .text.libgcc.div
-                0x00000000        0x0 c:/absolut alkoholische anwendungen/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrtiny\libgcc.a(_exit.o)
+                0x00000000        0x0 c:/absolut alkoholische anwendungen/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr4\libgcc.a(_exit.o)
+ .text.libgcc   0x00000000        0x0 c:/absolut alkoholische anwendungen/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr4\libgcc.a(_exit.o)
  .text.libgcc.prologue
-                0x00000000        0x0 c:/absolut alkoholische anwendungen/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrtiny\libgcc.a(_exit.o)
- .text.libgcc   0x00000000        0x0 c:/absolut alkoholische anwendungen/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrtiny\libgcc.a(_exit.o)
+                0x00000000        0x0 c:/absolut alkoholische anwendungen/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr4\libgcc.a(_exit.o)
  .text.libgcc.builtins
-                0x00000000        0x0 c:/absolut alkoholische anwendungen/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrtiny\libgcc.a(_exit.o)
+                0x00000000        0x0 c:/absolut alkoholische anwendungen/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr4\libgcc.a(_exit.o)
  .text.libgcc.fmul
-                0x00000000        0x0 c:/absolut alkoholische anwendungen/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrtiny\libgcc.a(_exit.o)
+                0x00000000        0x0 c:/absolut alkoholische anwendungen/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr4\libgcc.a(_exit.o)
  .text.libgcc.fixed
-                0x00000000        0x0 c:/absolut alkoholische anwendungen/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrtiny\libgcc.a(_exit.o)
+                0x00000000        0x0 c:/absolut alkoholische anwendungen/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr4\libgcc.a(_exit.o)
 
 Memory Configuration
 
 Name             Origin             Length             Attributes
-text             0x00000000         0x00001000         xr
-data             0x00800040         0x00000100         rw !x
-config           0x00820000         0x00000000         rw !x
-lock             0x00830000         0x00000002         rw !x
-signature        0x00840000         0x00000004         rw !x
+text             0x00000000         0x00002000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000002         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+user_signatures  0x00850000         0x00000400         rw !x
 *default*        0x00000000         0xffffffff
 
 Linker script and memory map
 
-                0x00004000                __RODATA_PM_OFFSET__ = 0x4000
-LOAD C:/Absolut Alkoholische Anwendungen/Atmel Studio/7.0/Packs/atmel/ATtiny_DFP/1.3.229/gcc/dev/attiny40/avrtiny/crtattiny40.o
+LOAD C:/Absolut Alkoholische Anwendungen/Atmel Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega8a/avr4/crtatmega8a.o
 LOAD main.o
 START GROUP
-LOAD c:/absolut alkoholische anwendungen/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrtiny\libm.a
+LOAD c:/absolut alkoholische anwendungen/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr4\libm.a
 END GROUP
 START GROUP
-LOAD c:/absolut alkoholische anwendungen/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrtiny\libgcc.a
-LOAD c:/absolut alkoholische anwendungen/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrtiny\libm.a
-LOAD c:/absolut alkoholische anwendungen/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrtiny\libc.a
-LOAD C:/Absolut Alkoholische Anwendungen/Atmel Studio/7.0/Packs/atmel/ATtiny_DFP/1.3.229/gcc/dev/attiny40/avrtiny\libattiny40.a
+LOAD c:/absolut alkoholische anwendungen/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr4\libgcc.a
+LOAD c:/absolut alkoholische anwendungen/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr4\libm.a
+LOAD c:/absolut alkoholische anwendungen/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr4\libc.a
+LOAD C:/Absolut Alkoholische Anwendungen/Atmel Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega8a/avr4\libatmega8a.a
 END GROUP
                 0x00000000                __TEXT_REGION_ORIGIN__ = DEFINED (__TEXT_REGION_ORIGIN__)?__TEXT_REGION_ORIGIN__:0x0
-                0x00800040                __DATA_REGION_ORIGIN__ = DEFINED (__DATA_REGION_ORIGIN__)?__DATA_REGION_ORIGIN__:0x800040
-                0x00001000                __TEXT_REGION_LENGTH__ = DEFINED (__TEXT_REGION_LENGTH__)?__TEXT_REGION_LENGTH__:0x1000
-                0x00000100                __DATA_REGION_LENGTH__ = DEFINED (__DATA_REGION_LENGTH__)?__DATA_REGION_LENGTH__:0x100
-                [0x00000000]                __FUSE_REGION_LENGTH__ = DEFINED (__FUSE_REGION_LENGTH__)?__FUSE_REGION_LENGTH__:0x2
-                0x00000002                __LOCK_REGION_LENGTH__ = DEFINED (__LOCK_REGION_LENGTH__)?__LOCK_REGION_LENGTH__:0x2
-                0x00000004                __SIGNATURE_REGION_LENGTH__ = DEFINED (__SIGNATURE_REGION_LENGTH__)?__SIGNATURE_REGION_LENGTH__:0x4
-                0x00004000                __RODATA_PM_OFFSET__ = DEFINED (__RODATA_PM_OFFSET__)?__RODATA_PM_OFFSET__:0x4000
+                0x00800060                __DATA_REGION_ORIGIN__ = DEFINED (__DATA_REGION_ORIGIN__)?__DATA_REGION_ORIGIN__:0x800060
+                0x00002000                __TEXT_REGION_LENGTH__ = DEFINED (__TEXT_REGION_LENGTH__)?__TEXT_REGION_LENGTH__:0x2000
+                0x0000ffa0                __DATA_REGION_LENGTH__ = DEFINED (__DATA_REGION_LENGTH__)?__DATA_REGION_LENGTH__:0xffa0
+                0x00010000                __EEPROM_REGION_LENGTH__ = DEFINED (__EEPROM_REGION_LENGTH__)?__EEPROM_REGION_LENGTH__:0x10000
+                [0x00000002]                __FUSE_REGION_LENGTH__ = DEFINED (__FUSE_REGION_LENGTH__)?__FUSE_REGION_LENGTH__:0x400
+                0x00000400                __LOCK_REGION_LENGTH__ = DEFINED (__LOCK_REGION_LENGTH__)?__LOCK_REGION_LENGTH__:0x400
+                0x00000400                __SIGNATURE_REGION_LENGTH__ = DEFINED (__SIGNATURE_REGION_LENGTH__)?__SIGNATURE_REGION_LENGTH__:0x400
+                0x00000400                __USER_SIGNATURE_REGION_LENGTH__ = DEFINED (__USER_SIGNATURE_REGION_LENGTH__)?__USER_SIGNATURE_REGION_LENGTH__:0x400
 
 .hash
  *(.hash)
@@ -151,43 +153,43 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000       0x80
+.text           0x00000000       0x76
  *(.vectors)
- .vectors       0x00000000       0x24 C:/Absolut Alkoholische Anwendungen/Atmel Studio/7.0/Packs/atmel/ATtiny_DFP/1.3.229/gcc/dev/attiny40/avrtiny/crtattiny40.o
+ .vectors       0x00000000       0x26 C:/Absolut Alkoholische Anwendungen/Atmel Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega8a/avr4/crtatmega8a.o
                 0x00000000                __vector_default
                 0x00000000                __vectors
  *(.vectors)
  *(.progmem.gcc*)
-                0x00000024                . = ALIGN (0x2)
-                0x00000024                __trampolines_start = .
+                0x00000026                . = ALIGN (0x2)
+                0x00000026                __trampolines_start = .
  *(.trampolines)
- .trampolines   0x00000024        0x0 linker stubs
+ .trampolines   0x00000026        0x0 linker stubs
  *(.trampolines*)
-                0x00000024                __trampolines_end = .
+                0x00000026                __trampolines_end = .
  *libprintf_flt.a:*(.progmem.data)
  *libc.a:*(.progmem.data)
  *(.progmem*)
-                0x00000024                . = ALIGN (0x2)
+                0x00000026                . = ALIGN (0x2)
  *(.jumptables)
  *(.jumptables*)
  *(.lowtext)
  *(.lowtext*)
-                0x00000024                __ctors_start = .
+                0x00000026                __ctors_start = .
  *(.ctors)
-                0x00000024                __ctors_end = .
-                0x00000024                __dtors_start = .
+                0x00000026                __ctors_end = .
+                0x00000026                __dtors_start = .
  *(.dtors)
-                0x00000024                __dtors_end = .
+                0x00000026                __dtors_end = .
  SORT(*)(.ctors)
  SORT(*)(.dtors)
  *(.init0)
- .init0         0x00000024        0x0 C:/Absolut Alkoholische Anwendungen/Atmel Studio/7.0/Packs/atmel/ATtiny_DFP/1.3.229/gcc/dev/attiny40/avrtiny/crtattiny40.o
-                0x00000024                __init
+ .init0         0x00000026        0x0 C:/Absolut Alkoholische Anwendungen/Atmel Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega8a/avr4/crtatmega8a.o
+                0x00000026                __init
  *(.init0)
  *(.init1)
  *(.init1)
  *(.init2)
- .init2         0x00000024        0xc C:/Absolut Alkoholische Anwendungen/Atmel Studio/7.0/Packs/atmel/ATtiny_DFP/1.3.229/gcc/dev/attiny40/avrtiny/crtattiny40.o
+ .init2         0x00000026        0xc C:/Absolut Alkoholische Anwendungen/Atmel Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega8a/avr4/crtatmega8a.o
  *(.init2)
  *(.init3)
  *(.init3)
@@ -202,37 +204,38 @@ END GROUP
  *(.init8)
  *(.init8)
  *(.init9)
- .init9         0x00000030        0x4 C:/Absolut Alkoholische Anwendungen/Atmel Studio/7.0/Packs/atmel/ATtiny_DFP/1.3.229/gcc/dev/attiny40/avrtiny/crtattiny40.o
+ .init9         0x00000032        0x4 C:/Absolut Alkoholische Anwendungen/Atmel Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega8a/avr4/crtatmega8a.o
  *(.init9)
  *(.text)
- .text          0x00000034        0x2 C:/Absolut Alkoholische Anwendungen/Atmel Studio/7.0/Packs/atmel/ATtiny_DFP/1.3.229/gcc/dev/attiny40/avrtiny/crtattiny40.o
-                0x00000034                __vector_1
-                0x00000034                __vector_12
-                0x00000034                __bad_interrupt
-                0x00000034                __vector_6
-                0x00000034                __vector_3
-                0x00000034                __vector_11
-                0x00000034                __vector_13
-                0x00000034                __vector_17
-                0x00000034                __vector_7
-                0x00000034                __vector_5
-                0x00000034                __vector_4
-                0x00000034                __vector_9
-                0x00000034                __vector_2
-                0x00000034                __vector_15
-                0x00000034                __vector_8
-                0x00000034                __vector_14
-                0x00000034                __vector_10
-                0x00000034                __vector_16
-                0x00000036                . = ALIGN (0x2)
+ .text          0x00000036        0x2 C:/Absolut Alkoholische Anwendungen/Atmel Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega8a/avr4/crtatmega8a.o
+                0x00000036                __vector_1
+                0x00000036                __vector_12
+                0x00000036                __bad_interrupt
+                0x00000036                __vector_6
+                0x00000036                __vector_3
+                0x00000036                __vector_11
+                0x00000036                __vector_13
+                0x00000036                __vector_17
+                0x00000036                __vector_7
+                0x00000036                __vector_5
+                0x00000036                __vector_4
+                0x00000036                __vector_9
+                0x00000036                __vector_2
+                0x00000036                __vector_15
+                0x00000036                __vector_8
+                0x00000036                __vector_14
+                0x00000036                __vector_10
+                0x00000036                __vector_16
+                0x00000036                __vector_18
+                0x00000038                . = ALIGN (0x2)
  *(.text.*)
- .text.main     0x00000036       0x46 main.o
-                0x00000036                main
-                0x0000007c                . = ALIGN (0x2)
+ .text.main     0x00000038       0x3a main.o
+                0x00000038                main
+                0x00000072                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x0000007c        0x0 c:/absolut alkoholische anwendungen/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrtiny\libgcc.a(_exit.o)
-                0x0000007c                _exit
-                0x0000007c                exit
+ .fini9         0x00000072        0x0 c:/absolut alkoholische anwendungen/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr4\libgcc.a(_exit.o)
+                0x00000072                _exit
+                0x00000072                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -251,39 +254,47 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x0000007c        0x4 c:/absolut alkoholische anwendungen/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrtiny\libgcc.a(_exit.o)
+ .fini0         0x00000072        0x4 c:/absolut alkoholische anwendungen/atmel studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr4\libgcc.a(_exit.o)
  *(.fini0)
-                0x00000080                _etext = .
+                0x00000076                _etext = .
 
-.rodata
- *(.rodata)
- *(.rodata*)
- *(.gnu.linkonce.r*)
-
-.data           0x00800040        0x0 load address 0x00000080
+.data           0x00800060        0x0 load address 0x00000076
                 [!provide]                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
  *(.gnu.linkonce.d*)
-                0x00800040                . = ALIGN (0x2)
-                0x00800040                _edata = .
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.r*)
+                0x00800060                . = ALIGN (0x2)
+                0x00800060                _edata = .
                 [!provide]                PROVIDE (__data_end, .)
 
-.bss            0x00800040        0x0
+.bss            0x00800060        0x0
                 [!provide]                PROVIDE (__bss_start, .)
  *(.bss)
  *(.bss*)
  *(COMMON)
                 [!provide]                PROVIDE (__bss_end, .)
-                0x00000080                __data_load_start = LOADADDR (.data)
-                0x00000080                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00000076                __data_load_start = LOADADDR (.data)
+                0x00000076                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x00800040        0x0
+.noinit         0x00800060        0x0
                 [!provide]                PROVIDE (__noinit_start, .)
  *(.noinit*)
                 [!provide]                PROVIDE (__noinit_end, .)
-                0x00800040                _end = .
+                0x00800060                _end = .
                 [!provide]                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
 
 .lock
  *(.lock*)
@@ -291,8 +302,8 @@ END GROUP
 .signature
  *(.signature*)
 
-.config
- *(.config*)
+.user_signatures
+ *(.user_signatures*)
 
 .stab
  *(.stab)
@@ -320,7 +331,7 @@ END GROUP
 .note.gnu.avr.deviceinfo
                 0x00000000       0x3c
  .note.gnu.avr.deviceinfo
-                0x00000000       0x3c C:/Absolut Alkoholische Anwendungen/Atmel Studio/7.0/Packs/atmel/ATtiny_DFP/1.3.229/gcc/dev/attiny40/avrtiny/crtattiny40.o
+                0x00000000       0x3c C:/Absolut Alkoholische Anwendungen/Atmel Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega8a/avr4/crtatmega8a.o
 
 .note.gnu.build-id
  *(.note.gnu.build-id)
@@ -345,30 +356,30 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000      0x588
+.debug_info     0x00000000      0x595
  *(.debug_info .gnu.linkonce.wi.*)
- .debug_info    0x00000000      0x47f C:/Absolut Alkoholische Anwendungen/Atmel Studio/7.0/Packs/atmel/ATtiny_DFP/1.3.229/gcc/dev/attiny40/avrtiny/crtattiny40.o
- .debug_info    0x0000047f      0x109 main.o
+ .debug_info    0x00000000      0x48c C:/Absolut Alkoholische Anwendungen/Atmel Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega8a/avr4/crtatmega8a.o
+ .debug_info    0x0000048c      0x109 main.o
 
-.debug_abbrev   0x00000000      0x507
+.debug_abbrev   0x00000000      0x517
  *(.debug_abbrev)
- .debug_abbrev  0x00000000      0x43e C:/Absolut Alkoholische Anwendungen/Atmel Studio/7.0/Packs/atmel/ATtiny_DFP/1.3.229/gcc/dev/attiny40/avrtiny/crtattiny40.o
- .debug_abbrev  0x0000043e       0xc9 main.o
+ .debug_abbrev  0x00000000      0x44e C:/Absolut Alkoholische Anwendungen/Atmel Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega8a/avr4/crtatmega8a.o
+ .debug_abbrev  0x0000044e       0xc9 main.o
 
-.debug_line     0x00000000      0x1fd
+.debug_line     0x00000000      0x1f7
  *(.debug_line .debug_line.* .debug_line_end)
- .debug_line    0x00000000      0x103 C:/Absolut Alkoholische Anwendungen/Atmel Studio/7.0/Packs/atmel/ATtiny_DFP/1.3.229/gcc/dev/attiny40/avrtiny/crtattiny40.o
- .debug_line    0x00000103       0xfa main.o
+ .debug_line    0x00000000      0x109 C:/Absolut Alkoholische Anwendungen/Atmel Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega8a/avr4/crtatmega8a.o
+ .debug_line    0x00000109       0xee main.o
 
 .debug_frame    0x00000000       0x34
  *(.debug_frame)
  .debug_frame   0x00000000       0x34 main.o
 
-.debug_str      0x00000000      0x2e6
+.debug_str      0x00000000      0x2cc
  *(.debug_str)
- .debug_str     0x00000000      0x191 C:/Absolut Alkoholische Anwendungen/Atmel Studio/7.0/Packs/atmel/ATtiny_DFP/1.3.229/gcc/dev/attiny40/avrtiny/crtattiny40.o
- .debug_str     0x00000191      0x155 main.o
-                                0x189 (size before relaxing)
+ .debug_str     0x00000000      0x17a C:/Absolut Alkoholische Anwendungen/Atmel Studio/7.0/Packs/atmel/ATmega_DFP/1.3.300/gcc/dev/atmega8a/avr4/crtatmega8a.o
+ .debug_str     0x0000017a      0x152 main.o
+                                0x186 (size before relaxing)
 
 .debug_loc      0x00000000       0x4a
  *(.debug_loc)
