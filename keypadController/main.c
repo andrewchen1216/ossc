@@ -9,8 +9,9 @@
 #endif
 
 #include <stdint.h>
-#include <avr/io.h>
 #include <stdbool.h>
+#include <avr/io.h>
+#include <avr/interrupt.h>
 #include <util/twi.h>
 #include <util/delay.h>
 
@@ -30,7 +31,7 @@ int sendbtn(bool colData[8])
 
 int main(void)
 {    
-
+	
 	
     bool row[8];
 	
@@ -38,8 +39,10 @@ int main(void)
 	
     DDRB	= 0b00011111;	// Enable PORTB0...5 (columns) as output.
     DDRD	= 0x00;			// Better safe than sorry.
-	DDRC	= 0x00;			// Ditto.   
+	DDRC	= 0x01;			// Enable PC0 as output, everything else as input   
     
+	PORTC0 = 1;
+	
     while (1) 
     {
 		
