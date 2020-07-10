@@ -3,29 +3,29 @@ KeypadDecoder.elf:     file format elf32-avr
 
 Sections:
 Idx Name          Size      VMA       LMA       File off  Algn
-  0 .text         000000c8  00000000  00000000  00000054  2**1
+  0 .text         0000007a  00000000  00000000  00000054  2**1
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
-  1 .data         00000000  00800060  00800060  0000011c  2**0
+  1 .data         00000000  00800060  00800060  000000ce  2**0
                   CONTENTS, ALLOC, LOAD, DATA
-  2 .comment      00000030  00000000  00000000  0000011c  2**0
+  2 .comment      00000030  00000000  00000000  000000ce  2**0
                   CONTENTS, READONLY
-  3 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  0000014c  2**2
+  3 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00000100  2**2
                   CONTENTS, READONLY
-  4 .debug_aranges 00000028  00000000  00000000  00000188  2**0
+  4 .debug_aranges 00000028  00000000  00000000  0000013c  2**0
                   CONTENTS, READONLY, DEBUGGING
-  5 .debug_info   0000062b  00000000  00000000  000001b0  2**0
+  5 .debug_info   000005a3  00000000  00000000  00000164  2**0
                   CONTENTS, READONLY, DEBUGGING
-  6 .debug_abbrev 0000057d  00000000  00000000  000007db  2**0
+  6 .debug_abbrev 0000051e  00000000  00000000  00000707  2**0
                   CONTENTS, READONLY, DEBUGGING
-  7 .debug_line   000002d0  00000000  00000000  00000d58  2**0
+  7 .debug_line   00000209  00000000  00000000  00000c25  2**0
                   CONTENTS, READONLY, DEBUGGING
-  8 .debug_frame  00000044  00000000  00000000  00001028  2**2
+  8 .debug_frame  00000034  00000000  00000000  00000e30  2**2
                   CONTENTS, READONLY, DEBUGGING
-  9 .debug_str    00000317  00000000  00000000  0000106c  2**0
+  9 .debug_str    000002dd  00000000  00000000  00000e64  2**0
                   CONTENTS, READONLY, DEBUGGING
- 10 .debug_loc    00000123  00000000  00000000  00001383  2**0
+ 10 .debug_loc    0000004a  00000000  00000000  00001141  2**0
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_ranges 00000030  00000000  00000000  000014a6  2**0
+ 11 .debug_ranges 00000018  00000000  00000000  0000118b  2**0
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -59,155 +59,82 @@ Disassembly of section .text:
   2e:	de bf       	out	0x3e, r29	; 62
   30:	cd bf       	out	0x3d, r28	; 61
   32:	02 d0       	rcall	.+4      	; 0x38 <main>
-  34:	47 c0       	rjmp	.+142    	; 0xc4 <_exit>
+  34:	20 c0       	rjmp	.+64     	; 0x76 <_exit>
 
 00000036 <__bad_interrupt>:
   36:	e4 cf       	rjmp	.-56     	; 0x0 <__vectors>
 
 00000038 <main>:
-}
-
-
-
-int main(void)
 {    
-  38:	cf 93       	push	r28
-  3a:	df 93       	push	r29
-  3c:	cd b7       	in	r28, 0x3d	; 61
-  3e:	de b7       	in	r29, 0x3e	; 62
-  40:	29 97       	sbiw	r28, 0x09	; 9
-  42:	0f b6       	in	r0, 0x3f	; 63
-  44:	f8 94       	cli
-  46:	de bf       	out	0x3e, r29	; 62
-  48:	0f be       	out	0x3f, r0	; 63
-  4a:	cd bf       	out	0x3d, r28	; 61
 
 	
-    bool row[9];
+    bool row[8];
 	
 	TWAR	= 0x24;
-  4c:	84 e2       	ldi	r24, 0x24	; 36
-  4e:	82 b9       	out	0x02, r24	; 2
+  38:	84 e2       	ldi	r24, 0x24	; 36
+  3a:	82 b9       	out	0x02, r24	; 2
 	
-    DDRB	= 0x0F; // Enable PORTB0...4 (columns) as output.
-  50:	8f e0       	ldi	r24, 0x0F	; 15
-  52:	87 bb       	out	0x17, r24	; 23
-    DDRD	= 0x00;	// Better safe than sorry.
-  54:	11 ba       	out	0x11, r1	; 17
-	DDRC	= 0x00; // Ditto.   
-  56:	14 ba       	out	0x14, r1	; 20
+    DDRB	= 0b00011111;	// Enable PORTB0...5 (columns) as output.
+  3c:	8f e1       	ldi	r24, 0x1F	; 31
+  3e:	87 bb       	out	0x17, r24	; 23
+    DDRD	= 0x00;			// Better safe than sorry.
+  40:	11 ba       	out	0x11, r1	; 17
+	DDRC	= 0x00;			// Ditto.   
+  42:	14 ba       	out	0x14, r1	; 20
+    {
+		
+		        
+        for (int i = 0; i < 5; i++)
+        {
+            PORTB|=(1<<i);
+  44:	61 e0       	ldi	r22, 0x01	; 1
+  46:	70 e0       	ldi	r23, 0x00	; 0
     
     while (1) 
     {
-        row[0] = PINB5; // Update row data
-  58:	91 e0       	ldi	r25, 0x01	; 1
-        row[7] = PIND4;
-        row[8] = PIND5;
-        
+		
+		        
         for (int i = 0; i < 5; i++)
+  48:	20 e0       	ldi	r18, 0x00	; 0
+  4a:	30 e0       	ldi	r19, 0x00	; 0
         {
             PORTB|=(1<<i);
-  5a:	a1 e0       	ldi	r26, 0x01	; 1
-  5c:	b0 e0       	ldi	r27, 0x00	; 0
-  5e:	9e 01       	movw	r18, r28
-  60:	26 5f       	subi	r18, 0xF6	; 246
-  62:	3f 4f       	sbci	r19, 0xFF	; 255
-    DDRD	= 0x00;	// Better safe than sorry.
-	DDRC	= 0x00; // Ditto.   
+  4c:	48 b3       	in	r20, 0x18	; 24
+  4e:	cb 01       	movw	r24, r22
+  50:	02 2e       	mov	r0, r18
+  52:	02 c0       	rjmp	.+4      	; 0x58 <__SREG__+0x19>
+  54:	88 0f       	add	r24, r24
+  56:	99 1f       	adc	r25, r25
+  58:	0a 94       	dec	r0
+  5a:	e2 f7       	brpl	.-8      	; 0x54 <__SREG__+0x15>
+  5c:	94 2f       	mov	r25, r20
+  5e:	98 2b       	or	r25, r24
+  60:	98 bb       	out	0x18, r25	; 24
+			row[6] = PIND4;
+			row[7] = PIND5;
+            
+			sendbtn(row);
+			
+			PORTB&=~(1<<i);
+  62:	98 b3       	in	r25, 0x18	; 24
+  64:	80 95       	com	r24
+  66:	89 23       	and	r24, r25
+  68:	88 bb       	out	0x18, r24	; 24
     
     while (1) 
     {
-        row[0] = PINB5; // Update row data
-  64:	99 83       	std	Y+1, r25	; 0x01
-        row[1] = PINB6; 
-  66:	9a 83       	std	Y+2, r25	; 0x02
-        row[2] = PINB7;
-  68:	9b 83       	std	Y+3, r25	; 0x03
-        row[3] = PIND0;
-  6a:	1c 82       	std	Y+4, r1	; 0x04
-        row[4] = PIND1;
-  6c:	9d 83       	std	Y+5, r25	; 0x05
-        row[5] = PIND2;
-  6e:	9e 83       	std	Y+6, r25	; 0x06
-        row[6] = PIND3;
-  70:	9f 83       	std	Y+7, r25	; 0x07
-        row[7] = PIND4;
-  72:	98 87       	std	Y+8, r25	; 0x08
-        row[8] = PIND5;
-  74:	99 87       	std	Y+9, r25	; 0x09
-        
+		
+		        
         for (int i = 0; i < 5; i++)
-  76:	60 e0       	ldi	r22, 0x00	; 0
-  78:	70 e0       	ldi	r23, 0x00	; 0
-        {
-            PORTB|=(1<<i);
-  7a:	88 b3       	in	r24, 0x18	; 24
-  7c:	ad 01       	movw	r20, r26
-  7e:	06 2e       	mov	r0, r22
-  80:	02 c0       	rjmp	.+4      	; 0x86 <__SREG__+0x47>
-  82:	44 0f       	add	r20, r20
-  84:	55 1f       	adc	r21, r21
-  86:	0a 94       	dec	r0
-  88:	e2 f7       	brpl	.-8      	; 0x82 <__SREG__+0x43>
-  8a:	84 2b       	or	r24, r20
-  8c:	88 bb       	out	0x18, r24	; 24
-  8e:	fe 01       	movw	r30, r28
-  90:	31 96       	adiw	r30, 0x01	; 1
-            for (int j = 0; j < 9; j++)
-            {
-                if (row[j] == 0)
-  92:	81 91       	ld	r24, Z+
-  94:	81 11       	cpse	r24, r1
-  96:	09 c0       	rjmp	.+18     	; 0xaa <__SREG__+0x6b>
-	#else
-		//round up by default
-		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
-	#endif
+  6a:	2f 5f       	subi	r18, 0xFF	; 255
+  6c:	3f 4f       	sbci	r19, 0xFF	; 255
+  6e:	25 30       	cpi	r18, 0x05	; 5
+  70:	31 05       	cpc	r19, r1
+  72:	61 f7       	brne	.-40     	; 0x4c <__SREG__+0xd>
+  74:	e9 cf       	rjmp	.-46     	; 0x48 <__SREG__+0x9>
 
-	__builtin_avr_delay_cycles(__ticks_dc);
-  98:	0f ef       	ldi	r16, 0xFF	; 255
-  9a:	11 ee       	ldi	r17, 0xE1	; 225
-  9c:	84 e0       	ldi	r24, 0x04	; 4
-  9e:	01 50       	subi	r16, 0x01	; 1
-  a0:	10 40       	sbci	r17, 0x00	; 0
-  a2:	80 40       	sbci	r24, 0x00	; 0
-  a4:	e1 f7       	brne	.-8      	; 0x9e <__SREG__+0x5f>
-  a6:	00 c0       	rjmp	.+0      	; 0xa8 <__SREG__+0x69>
-  a8:	00 00       	nop
-        row[8] = PIND5;
-        
-        for (int i = 0; i < 5; i++)
-        {
-            PORTB|=(1<<i);
-            for (int j = 0; j < 9; j++)
-  aa:	e2 17       	cp	r30, r18
-  ac:	f3 07       	cpc	r31, r19
-  ae:	89 f7       	brne	.-30     	; 0x92 <__SREG__+0x53>
-				else
-				{
-					sendbtn(0x0f, 0x0f);
-				}
-            }
-            PORTB&=~(1<<i);
-  b0:	88 b3       	in	r24, 0x18	; 24
-  b2:	40 95       	com	r20
-  b4:	48 23       	and	r20, r24
-  b6:	48 bb       	out	0x18, r20	; 24
-        row[5] = PIND2;
-        row[6] = PIND3;
-        row[7] = PIND4;
-        row[8] = PIND5;
-        
-        for (int i = 0; i < 5; i++)
-  b8:	6f 5f       	subi	r22, 0xFF	; 255
-  ba:	7f 4f       	sbci	r23, 0xFF	; 255
-  bc:	65 30       	cpi	r22, 0x05	; 5
-  be:	71 05       	cpc	r23, r1
-  c0:	e1 f6       	brne	.-72     	; 0x7a <__SREG__+0x3b>
-  c2:	d0 cf       	rjmp	.-96     	; 0x64 <__SREG__+0x25>
+00000076 <_exit>:
+  76:	f8 94       	cli
 
-000000c4 <_exit>:
-  c4:	f8 94       	cli
-
-000000c6 <__stop_program>:
-  c6:	ff cf       	rjmp	.-2      	; 0xc6 <__stop_program>
+00000078 <__stop_program>:
+  78:	ff cf       	rjmp	.-2      	; 0x78 <__stop_program>
