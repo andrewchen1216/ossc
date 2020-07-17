@@ -12,8 +12,8 @@
 #include <stdbool.h>
 #include <avr/io.h>
 #include <avr/interrupt.h>
-#include <util/twi.h>
 #include <util/delay.h>
+#include <libs/Wire/Wire.h>
 
 int sendbtn(bool colData[8])
 {	
